@@ -1,1 +1,1 @@
-# registry
+# etcd-registry
