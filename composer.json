@@ -2,7 +2,14 @@
   "name": "zanphp/etcd-registry",
   "require": {
     "php": ">=5.6",
-    "zanphp/contracts": "dev-master"
+    "zanphp/contracts": "dev-master",
+    "zanphp/exception": "dev-master",
+    "zanphp/support": "dev-master",
+    "zanphp/service-store": "dev-master",
+    "zanphp/http-client": "dev-master",
+    "zanphp/nova": "dev-master",
+    "zanphp/nova-foundation": "dev-master",
+    "zanphp/nova-connection-pool": "dev-master"
   },
   "autoload": {
     "psr-4": {
