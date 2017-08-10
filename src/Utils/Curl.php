@@ -1,6 +1,6 @@
 <?php
 
-namespace ZanPHP\EtcdRegistry\Utils\Curl;
+namespace ZanPHP\EtcdRegistry\Utils;
 
 class Curl
 {
