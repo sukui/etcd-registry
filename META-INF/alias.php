@@ -9,7 +9,6 @@ return [
     \ZanPHP\EtcdRegistry\ServerDiscoveryInitiator::class => "\\Zan\\Framework\\Network\\ServerManager\\ServerDiscoveryInitiator",
     \ZanPHP\EtcdRegistry\ServerRegister::class => "\\Zan\\Framework\\Network\\ServerManager\\ServerRegister",
     \ZanPHP\EtcdRegistry\ServerRegisterInitiator::class => "\\Zan\\Framework\\Network\\ServerManager\\ServerRegisterInitiator",
-    \ZanPHP\EtcdRegistry\ServerStore::class => "\\Zan\\Framework\\Network\\ServerManager\\ServerStore",
     \ZanPHP\EtcdRegistry\ServiceUnregister::class => "\\Zan\\Framework\\Network\\ServerManager\\ServiceUnregister",
 
 

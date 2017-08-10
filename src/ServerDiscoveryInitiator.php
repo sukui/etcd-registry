@@ -4,8 +4,6 @@ namespace ZanPHP\EtcdRegistry;
 
 use Kdt\Iron\Nova\Foundation\TService;
 use Kdt\Iron\Nova\Nova;
-
-
 use ZanPHP\Contracts\Config\Repository;
 use ZanPHP\EtcdRegistry\Exception\ServerConfigException;
 use ZanPHP\NovaConnectionPool\NovaClientConnectionManager;
