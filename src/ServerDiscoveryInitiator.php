@@ -17,8 +17,8 @@ class ServerDiscoveryInitiator
 
     public function init($workerId)
     {
-        $config = make(Repository::class);
-        $config = $config->get('registry');
+        $repository = make(Repository::class);
+        $config = $repository->get('registry');
         if (empty($config)) {
             throw new ServerConfigException("registry config is not found, see: http://zanphpdoc.zanphp.io/config/registry.html");
         }
@@ -28,7 +28,7 @@ class ServerDiscoveryInitiator
         }
 
         // 为特定app指定protocol 与 domain
-        $appConfigs = $config->get('registry.app_configs', []);
+        $appConfigs = $repository->get('registry.app_configs', []);
         foreach ($config['app_names'] as $appName) {
             if (!isset($appConfigs[$appName]) || !is_array($appConfigs[$appName])) {
                 $appConfigs[$appName] = [];
