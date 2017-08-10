@@ -64,8 +64,8 @@ class ServerDiscoveryInitiator
 
     public function noNeedDiscovery($config)
     {
-        $config = make(Repository::class);
-        $noNeedDiscovery = $config->get('service_discovery');
+        $repository = make(Repository::class);
+        $noNeedDiscovery = $repository->get('service_discovery');
         if (empty($noNeedDiscovery)) {
             return $config;
         }
