@@ -12,5 +12,5 @@ return [
     \ZanPHP\EtcdRegistry\ServiceUnregister::class => "\\Zan\\Framework\\Network\\ServerManager\\ServiceUnregister",
 
 
-    \ZanPHP\EtcdRegistry\Utils\Curl\Curl::class => "\\Zan\\Framework\\Network\\Common\\Curl",
+    \ZanPHP\EtcdRegistry\Utils\Curl::class => "\\Zan\\Framework\\Network\\Common\\Curl",
 ];
