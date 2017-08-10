@@ -4,7 +4,7 @@ namespace ZanPHP\EtcdRegistry;
 
 use Kdt\Iron\Nova\Nova;
 use ZanPHP\Contracts\Config\Repository;
-use ZanPHP\EtcdRegistry\Utils\Curl\Curl;
+use ZanPHP\EtcdRegistry\Utils\Curl;
 
 class ServiceUnregister
 {
