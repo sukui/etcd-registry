@@ -137,7 +137,9 @@ class ServerRegister
         $httpClient = new HttpClient($node["host"], $node["port"]);
         $httpClient->setMethod("PUT");
         // 这里只有 worker 进程的refresh, 可以成功设置超时
-        $httpClient->setTimeout(3000);
+        if (isset($_SERVER["WORKER_ID"])) {
+            $httpClient->setTimeout(3000);
+        }
         $httpClient->setUri("/v2/keys/$etcdV2Key");
         $httpClient->setBody(http_build_query($params));
         $httpClient->setHeader([
