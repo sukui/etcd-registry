@@ -6,9 +6,9 @@
     "zanphp/exception": "dev-master",
     "zanphp/support": "dev-master",
     "zanphp/service-store": "dev-master",
-    "zanphp/http-client": "dev-master",
-    "zanphp/nova": "dev-master",
-    "zanphp/nova-foundation": "dev-master",
+    "zanphp/http-client": "dev-laogui",
+    "zanphp/nova": "dev-laogui",
+    "zanphp/nova-foundation": "dev-laogui",
     "zanphp/nova-connection-pool": "dev-master"
   },
   "autoload": {
