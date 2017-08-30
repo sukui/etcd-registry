@@ -7,6 +7,7 @@ use ZanPHP\Coroutine\Task;
 use ZanPHP\EtcdRegistry\Exception\ServerDiscoveryEtcdException;
 use ZanPHP\HttpClient\Exception\HttpClientTimeoutException;
 use ZanPHP\HttpClient\HttpClient;
+use ZanPHP\HttpClient\Response;
 use ZanPHP\NovaConnectionPool\NovaClientConnectionManager;
 use ZanPHP\ServiceStore\ServiceStore;
 use ZanPHP\Support\Arr;
@@ -131,6 +132,7 @@ class ServerDiscovery
         $uri = $this->buildEtcdUri();
 
         $discoveryTimeout = Arr::get($this->config, "discovery.timeout", self::DEFAULT_DISCOVER_TIMEOUT);
+        /** @var Response $response */
         $response = (yield $httpClient->get($uri, [], $discoveryTimeout));
         $raw = $response->getBody();
         $jsonData = Json::decode($raw, true);
