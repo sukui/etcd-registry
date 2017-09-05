@@ -3,7 +3,7 @@
 namespace Zan\Framework\Network\ServerManager\Exception;
 
 
-use Zan\Framework\Foundation\Exception\ZanException;
+use ZanPHP\Exception\ZanException;
 
 class ServerDiscoveryEtcdException extends ZanException
 {
