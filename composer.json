@@ -9,7 +9,7 @@
     "zanphp/http-client": "dev-laogui",
     "zanphp/nova": "dev-laogui",
     "zanphp/nova-foundation": "dev-laogui",
-    "zanphp/nova-connection-pool": "dev-master"
+    "zanphp/nova-connection-pool": "dev-laogui"
   },
   "autoload": {
     "psr-4": {
